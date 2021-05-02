@@ -8,7 +8,20 @@
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
         <link type = "text/css" href="/common/styles.css" rel = "stylesheet"/>
     </head>
-    <body>
+    <body> 
+        <?php
+            require_once 'common/config.php';
+            session_start();
+
+            $vipQuery = "SELECT inventory FROM parking WHERE parkingType = 'VIP'";
+            $vipResult = mysqli_query($conn,$vipQuery);
+            $vipRow = mysqli_fetch_array($vipResult);
+            $vipInventory = $vipRow['inventory'];
+            $stdQuery = "SELECT inventory FROM parking WHERE parkingType = 'Standard'";
+            $stdResult = mysqli_query($conn,$stdQuery);
+            $stdRow = mysqli_fetch_array($stdResult);
+            $stdInventory = $stdRow['inventory'];
+        ?>
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php">Rent-A-Car</a>
@@ -17,5 +30,22 @@
                 <a class="nav-link" href="login.php">Login</a>
             </div>
         </nav>
+        <br>
+            <h1>Prepay for your parking here. Select your parking location</h1>
+
+            <form method = "get" action = "parkingSubmit.php">
+            <div class="row align-items-center">
+                <div class="col">
+                    <input type="submit" class="btn btn-primary" name="parkingType" aria-label="Standard" value = "Standard">
+                    <br>
+                    <p>$25/day, only <?=$stdInventory?> spaces left!</p>
+                </div>
+                <div class="col">
+                    <input type="submit" class="btn btn-primary" name="parkingType" aria-label="VIP" value = "VIP">
+                    <br>
+                    <p>$50/day, only <?=$vipInventory?> spaces left!</p>
+                </div>
+            </div>
+        </form>
     </body>
 </html>

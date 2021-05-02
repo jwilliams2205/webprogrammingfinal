@@ -6,13 +6,13 @@
                 <p>Ford Fiesta - $65/day</p>
                 <input class='btn btn-primary' type = 'submit' name = 'fiesta' value = 'Rent Me!'><br><br>
                 <img src = '/common/carInventory/compact/GM_Bolt.jpg'/><br>
-                <p>Ford Fiesta - $65/day</p>
+                <p>GM Bolt - $70/day</p>
                 <input class='btn btn-primary' type = 'submit' name = 'bolt' value = 'Rent Me!'><br><br>
                 <img src = '/common/carInventory/compact/Honda_Civic.jpg'/><br>
-                <p>Ford Fiesta - $65/day</p>
+                <p>Honda Civic - $65/day</p>
                 <input class='btn btn-primary' type = 'submit' name = 'civic' value = 'Rent Me!'><br><br>
                 <img src = '/common/carInventory/compact/Toyota_Corolla.jpg'/><br>
-                <p>Ford Fiesta - $65/day</p>
+                <p>Toyota Corolla - $60/day</p>
                 <input class='btn btn-primary' type = 'submit' name = 'corolla' value = 'Rent Me!'><br><br>";
     }
 

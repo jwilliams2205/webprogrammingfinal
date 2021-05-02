@@ -31,11 +31,11 @@
             <div class="mb-3 w-25 centered">
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
-                    <input type="text" size = "16" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name = "userName">
+                    <input type="text" size = "16" class="form-control"  name = "userName">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
-                    <input type="password" size = "16" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name = "password">
+                    <input type="password" size = "16" class="form-control" name = "password">
                 </div>
                 <input type = "submit" value = "Login"/>
             <div>
