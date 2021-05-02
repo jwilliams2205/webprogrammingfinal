@@ -2,7 +2,140 @@ body{
     text-align: center;
 }
 
+.centered{
+    display: inline-block;
+    margin: auto;
+}
+
+#textContainer{
+    background-color: beige;
+
+}
+
+#fullPage{
+    height: 100vh;
+}
+
+#intro {
+    width: 100%;
+    height: 100%;
+}
+
 #background{
+    /* animation: changeBg 5s infinite;  */
+    width: 100%;
+    position: absolute;
+    /* height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.bg-img {
+    background-size: cover!important;
+    /* background-repeat: no-repeat!important; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;   
+}
+
+#accord {
+    background: url("accord.jpg") no-repeat;
+}
+
+#camry {
+    background:url("camry.jpg") no-repeat;
+}
+
+#fusion {
+    background: url("fusion.jpg") no-repeat;
+}
+
+#sonata {
+    background:url("sonata.jpg") no-repeat;
+}
+
+
+#background div:nth-of-type(1) {
+    animation-delay: -38s;
+    -webkit-animation-delay: -38s;
+}
+
+#background div:nth-of-type(2) {
+    animation-delay: -29s;
+    -webkit-animation-delay: -29s;
+}
+
+#background div:nth-of-type(3) {
+    animation-delay: -19s;
+    -webkit-animation-delay: -19s;
+}
+
+#background div:nth-of-type(4) {
+    animation-delay: -9s;
+    -webkit-animation-delay: -9s;
+}
+
+@keyframes changeBg {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* browser support */
+@-webkit-keyframes changeBg {
+    0% {
+      opacity: 1;
+    }
+  
+    17% {
+      opacity: 1;
+    }
+  
+    25% {
+      opacity: 0;
+    }
+  
+    92% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+#background div {
+    z-index: -1;
+    position: absolute;
+    width:100%;
+    height: 100vh;
+
+    animation-name: changeBg;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
+
+    -webkit-animation-name: changeBg;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 40s;
+}
+
+
+/* #background{
     animation: changeBg 5s infinite; 
     width:100%; 
     height:100vh;
@@ -14,17 +147,4 @@ body{
     25% {background-image: url("camry.jpg");}
     50% {background-image: url("fusion.jpg");}
     75% {background-image: url("sonata.jpg");}
-}
-
-.centered{
-    display: inline-block;
-    margin: auto;
-}
-
-#textContainer{
-    background-color: beige;
-}
-
-#fullPage{
-    height: 100vh;
-}
+} */

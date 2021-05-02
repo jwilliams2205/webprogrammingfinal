@@ -17,12 +17,18 @@
                 <a class="nav-link" href="login.php">Login</a>
             </div>
         </nav>
-        <div id = "background">
+        <div id="main">
+            <div id ="background">
+                <div class="bg-img" id="accord"></div>
+                <div class="bg-img" id="camry"></div>
+                <div class="bg-img" id="fusion"></div>
+                <div class="bg-img" id="sonata"></div>
+            </div>
             <div id = "textContainer" class ="p-3 mb-2 bg-dark text-white">
                 <h1>Welcome to Rent-a-Car!</h1>
-                <p>This website will allow you to rent a car in a city near you!</p>
+                <p>This website will allow you to rent a car isn a city near you!</p>
                 <a href = "signup.php">Click here to Get Started!</a>
-        </div>
+            </div>
         </div>
     </body>
 </html>
