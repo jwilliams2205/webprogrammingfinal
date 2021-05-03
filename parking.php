@@ -6,7 +6,7 @@
         <title>Rent-a-Car - Prepay Parking</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-        <link type = "text/css" href="/common/styles.css" rel = "stylesheet"/>
+        <link type = "text/css" href="/common/styles/styles.css" rel = "stylesheet"/>
     </head>
     <body> 
         <?php
@@ -31,19 +31,23 @@
             </div>
         </nav>
         <br>
-            <h1>Prepay for your parking here. Select your parking location</h1>
-
+            <header class ="center-text">
+                <h1>Prepay for your parking here </h1>
+                <h2>Select your parking location</h2>
+            </header>
+            
             <form method = "get" action = "parkingSubmit.php">
-            <div class="row align-items-center">
+            <!-- <div class="row align-items-center"> -->
+            <div class="parking">
                 <div class="col">
                     <input type="submit" class="btn btn-primary" name="parkingType" aria-label="Standard" value = "Standard">
                     <br>
-                    <p>$25/day, only <?=$stdInventory?> spaces left!</p>
+                    <p><span class="price">$25/day</span>, <br><?=$stdInventory?> spaces left!</p>
                 </div>
                 <div class="col">
                     <input type="submit" class="btn btn-primary" name="parkingType" aria-label="VIP" value = "VIP">
                     <br>
-                    <p>$50/day, only <?=$vipInventory?> spaces left!</p>
+                    <p><span class="price">$50/day</span>, <br><?=$vipInventory?>spaces left!</p>
                 </div>
             </div>
         </form>

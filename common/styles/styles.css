@@ -1,13 +1,68 @@
 
-
 .centered{
     display: inline-block;
     margin: auto;
+    color: #17191b
 }
 
+.parking {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.parking .col {
+    display: inline-flexbox;
+    width:203px;
+    height: 190px;
+    margin: 15px auto;
+    justify-content: center;
+    padding: 15px 25px 5px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px rgb(226, 225, 225) solid;
+    border-radius: 3px;
+}
+
+.parking .btn {
+    font-size: 1.21rem;
+    width: 150px;
+}
+
+span.price {
+    display: inline-block;
+    color: grey;
+    margin-bottom: 3px;
+    font-size: 1.20rem;
+}
+
+.parking p {
+    /* margin-top: 1rem; */
+    margin: 3px auto;
+    padding: 9px 25px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/*Couldn't decide which gradient to pick*/
 #textContainer{
     background-color: beige;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom:9px;
+    /* background: linear-gradient(to right, #212529 27%, #4e5052 82%); */
+    background: linear-gradient(to right, #212529 45%, #4e5052 92%);
+    /* background: linear-gradient(to right, #212529 45%, #4e5052 113%); */
+    /* background: linear-gradient(to right, #212529 66%, #4e5052 109%); */
+}
+/* This was class in textcontainer: bg-dark */
 
+#textContainer p {
+    margin-bottom: 11px;
+}
+
+.container-fluid a {
+    font-size: 1.11rem;
 }
 
 #fullPage{
@@ -38,19 +93,19 @@
 }
 
 #accord {
-    background: url("accord.jpg") no-repeat;
+    background: url("/common/accord.jpg") no-repeat;
 }
 
 #camry {
-    background:url("camry.jpg") no-repeat;
+    background:url("/common/camry.jpg") no-repeat;
 }
 
 #fusion {
-    background: url("fusion.jpg") no-repeat;
+    background: url("/common/fusion.jpg") no-repeat;
 }
 
 #sonata {
-    background:url("sonata.jpg") no-repeat;
+    background:url("/common/sonata.jpg") no-repeat;
 }
 
 
@@ -131,7 +186,6 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-duration: 40s;
 }
-
 
 /* #background{
     animation: changeBg 5s infinite; 
