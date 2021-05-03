@@ -54,7 +54,7 @@ foreach($tables as $key => $sql) {
     $query = @$conns->query($sql);
 
     if(!$query) {
-        $errors[] = "Table $key : Creation Failed ($conn->error)";
+        $errors[] = "Table $key : Creation Failed ($conns->error)";
     } else {
         $errors[] = "Table $key  : Creation Success";
     }
@@ -72,5 +72,5 @@ foreach($errors as $msg) {
 // }
 
 $conn->close();
-
+$conns->close();
 ?>
